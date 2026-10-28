@@ -1,47 +1,61 @@
-# Portfolio de Jonathan Ruiz
+# Jonathan Ruiz - Full Stack Developer Portfolio
 
-Web estática (HTML, CSS y JavaScript, sin dependencias). Ábrela con doble clic en `index.html`
-o súbela a GitHub Pages, Netlify o Hostinger.
+Personal portfolio website built with clean, accessible, semantic HTML5, modern CSS, and vanilla JavaScript (no build step or external dependencies required). Designed to be hosted on GitHub Pages.
 
-## Dónde poner imágenes y vídeos
+**Live site:** [cynox336.github.io](https://cynox336.github.io)
 
-    src/
-      img/    capturas de los proyectos (.png o .jpg)
-      video/  vídeos de demostración (.mp4)
-      cv/     tu CV en PDF
+---
 
-Nombres que espera el código ahora mismo (puedes cambiarlos en `script.js`):
+## 🚀 Overview
 
-- Aura, WoWElemental y Duckstore (ya incluidas): `aura-*.webp`, `wowelemental-*.webp`, `duckstore-*.webp`, `bis-tracker-*.webp`, `knekro-bot.webp` y sus miniaturas `-thumb.webp`
-- Otras imágenes: `streamer-bot.png`
-- Vídeo: `aura-demo.mp4`
+- **Lightweight & Fast:** Pure HTML, CSS, and vanilla JS with zero dependencies.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop screens with CSS Grid and Flexbox.
+- **Dark Mode:** Supports automatic system preference (`prefers-color-scheme`) and manual toggle with `localStorage` persistence.
+- **Accessibility (a11y):** ARIA landmarks, focus-visible states, keyboard-navigable carousel, and semantic markup.
+- **Project Showcase:** Interactive image gallery and native `<dialog>` video modal for project demos.
 
-La imagen `aura-inicio.webp` también se muestra en la portada.
+---
 
-## Cómo añadir un vídeo a otro proyecto
+## 📁 Project Structure
 
-1. Guarda el vídeo en `src/video/`, por ejemplo `wowelemental-demo.mp4`.
-2. En `index.html`, dentro del `<div class="shot">` de ese proyecto, añade debajo de la imagen:
+```text
+portfolio/
+├── index.html              # Main HTML document
+├── styles.css              # Global styles and responsive layout
+├── script.js               # Theme toggle, carousel, modal, and gallery logic
+├── README.md               # Repository documentation
+└── src/
+    ├── cv/                 # Resume / CV PDF files
+    ├── img/                # Project screenshots and thumbnails (.webp / .png)
+    └── video/              # Demo video recordings (.mp4)
+```
 
-       <button class="play" type="button" data-video="src/video/wowelemental-demo.mp4" aria-label="Ver vídeo de demostración de WoWElemental">Ver demo</button>
+---
 
-Consejo: usa .mp4 (H.264) y pesos bajos (menos de 20 MB) para que cargue rápido.
+## 🖼️ Media & Asset Guidelines
 
-## Cómo añadir un proyecto nuevo
+- **Screenshots:** Placed in `src/img/`. Recommended format is `.webp` with `-thumb.webp` companion thumbnails for fast loading.
+- **Demo Videos:** Placed in `src/video/` (e.g. `aura-demo.mp4`). Recommended codec is H.264 MP4 under 20 MB.
+- **CV / Resume:** Stored in `src/cv/CV_Jonathan_Ruiz_Full_Stack_Junior.pdf`.
 
-En `index.html`, copia un bloque `<article class="project"> ... </article>` de la sección Proyectos y cambia
-sus textos, el nombre de la imagen y los enlaces. Cuando subas Streamer-BOT a GitHub, añade su enlace
-con `<p class="links"><a href="..." target="_blank" rel="noopener">Código en GitHub</a></p>`.
+---
 
-## Cambios técnicos
+## 🛠️ Local Development
 
-- Todo el contenido está en HTML (visible sin JavaScript y legible para buscadores).
-- `script.js` solo gestiona la ventana de vídeo y las imágenes que faltan.
-- Imágenes con `loading="lazy"` (la de portada con prioridad), tamaños declarados y script con `defer`.
+Simply open `index.html` in your browser, or run a lightweight local server:
 
-## Portada y modo oscuro
+```bash
+# Using Python
+python -m http.server 8000
 
-- El carrusel de la portada usa la primera imagen de cada proyecto. Las capturas que aún no existen se
-  quitan solas del carrusel, así que se irá completando según añadas imágenes.
-- El botón "Modo oscuro" de la cabecera recuerda tu elección; la primera vez sigue el tema del sistema.
-- El carrusel se detiene al pasar el ratón o al usar el teclado, y no avanza solo si el sistema pide menos animaciones.
+# Using Node.js (via npx serve)
+npx serve
+```
+
+Then visit `http://localhost:8000`.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).

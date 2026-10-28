@@ -44,7 +44,6 @@ h1{font-size:clamp(3rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
 .btn.primary{background:var(--ink);color:var(--on-ink)}
 .btn.primary:hover{background:var(--blue);border-color:var(--blue)}
 
-/* Marco de navegador: el elemento memorable */
 .frame{background:var(--surface);border:2px solid var(--edge);border-radius:12px;overflow:hidden;box-shadow:10px 10px 0 var(--shadow)}
 .bar{display:flex;gap:6px;padding:.6rem .8rem;border-bottom:2px solid var(--edge);background:var(--paper)}
 .bar::before{content:"";width:42px;height:10px;background:radial-gradient(circle at 5px 5px,transparent 2.8px,var(--edge) 3.3px,var(--edge) 4.6px,transparent 5px) 0 0/16px 10px repeat-x}
@@ -80,8 +79,8 @@ h1{font-size:clamp(3rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
 .stack dt{font:600 1.1rem var(--display);color:var(--ink)}
 .stack dd{margin:0}
 .langs{margin-top:1rem;color:var(--muted)}
-#contacto{padding-bottom:4rem}
-#contacto p{max-width:36rem}
+#contact, #contacto{padding-bottom:4rem}
+#contact p, #contacto p{max-width:36rem}
 footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;color:var(--muted)}
 
 dialog{width:min(900px,92vw);border:2px solid var(--edge);border-radius:12px;padding:1rem;background:var(--surface);color:var(--text)}

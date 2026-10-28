@@ -1,13 +1,11 @@
 "use strict";
 
-/* Imágenes que no existen: se muestra un marco con el nombre del archivo que falta. */
 document.querySelectorAll(".project .shot img").forEach(img => {
   const markEmpty = () => { img.parentElement.classList.add("empty"); img.hidden = true; };
   img.addEventListener("error", markEmpty);
   if (img.complete && img.naturalWidth === 0) markEmpty();
 });
 
-/* Vídeo de demostración en una ventana (dialog nativo). */
 const dialog = document.getElementById("demo");
 const video = document.getElementById("demo-video");
 const error = document.getElementById("demo-error");
@@ -35,7 +33,6 @@ dialog.addEventListener("close", () => {
   video.load();
 });
 
-/* Galería de capturas: al pulsar una miniatura se cambia la imagen principal. */
 document.querySelectorAll(".thumb").forEach(thumb => {
   thumb.addEventListener("click", () => {
     const project = thumb.closest(".project");
@@ -48,7 +45,6 @@ document.querySelectorAll(".thumb").forEach(thumb => {
   });
 });
 
-/* Modo oscuro: se recuerda la elección y por defecto sigue al sistema. */
 const root = document.documentElement;
 const themeButton = document.getElementById("theme-toggle");
 const themeMeta = document.querySelector('meta[name="theme-color"]');
@@ -62,10 +58,12 @@ applyTheme(root.dataset.theme || "light");
 themeButton.addEventListener("click", () => {
   const next = root.dataset.theme === "dark" ? "light" : "dark";
   applyTheme(next);
-  try { localStorage.setItem("tema", next); } catch (e) { /* sin almacenamiento */ }
+  try {
+    localStorage.setItem("theme", next);
+    localStorage.setItem("tema", next);
+  } catch (e) {}
 });
 
-/* Carrusel de portada: avance automático con pausa, botones, puntos y teclado. */
 const carousel = document.querySelector(".carousel");
 if (carousel) {
   const slidesBox = carousel.querySelector(".slides");
@@ -106,7 +104,6 @@ if (carousel) {
     if (playing && slides.length > 1) timer = setInterval(() => go(index + 1), 5000);
   }
 
-  /* Si una captura no existe todavía, se quita del carrusel (la última queda como marco vacío). */
   function dropIfBroken(slide) {
     if (slides.length < 2) {
       const shot = slide.querySelector(".shot");

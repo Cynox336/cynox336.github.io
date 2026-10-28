@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <script>try{var t=localStorage.getItem("tema")}catch(e){}document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")</script>
+  <script>try{var t=localStorage.getItem("theme")||localStorage.getItem("tema")}catch(e){}document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")</script>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Jonathan Ruiz","jobTitle":"Programador Full Stack Junior","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"sameAs":["https://github.com/Cynox336","https://linkedin.com/in/jonathan-rp/"]}
@@ -22,28 +22,28 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <a class="skip" href="#content">Saltar al contenido</a>
 
   <header class="top">
-    <a class="brand" href="#inicio">Jonathan Ruiz</a>
+    <a class="brand" href="#home">Jonathan Ruiz</a>
     <nav aria-label="Principal">
-      <a href="#proyectos">Proyectos</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#tecnologias">Tecnologías</a>
-      <a href="#formacion">Formación</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#skills">Tecnologías</a>
+      <a href="#education">Formación</a>
+      <a href="#contact">Contacto</a>
     </nav>
     <button class="theme-toggle" id="theme-toggle" type="button">Modo oscuro</button>
   </header>
 
-  <main id="contenido">
-    <section id="inicio" class="hero" aria-labelledby="t-inicio">
+  <main id="content">
+    <section id="home" class="hero" aria-labelledby="t-home">
       <div>
-        <h1 id="t-inicio">Jonathan Ruiz</h1>
+        <h1 id="t-home">Jonathan Ruiz</h1>
         <p class="role">Programador full stack junior</p>
         <p class="lead">Construyo aplicaciones web con Python, FastAPI y JavaScript, desde la base de datos hasta la pantalla. Desarrollo proyectos propios y para clientes desde 2023.</p>
         <div class="actions">
-          <a class="btn primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn primary" href="#projects">Ver proyectos</a>
           <a class="btn" href="src/cv/CV_Jonathan_Ruiz_Full_Stack_Junior.pdf" download>Descargar CV</a>
         </div>
       </div>
@@ -84,8 +84,8 @@
       </div>
     </section>
 
-    <section id="proyectos" aria-labelledby="t-proyectos">
-      <h2 id="t-proyectos">Proyectos</h2>
+    <section id="projects" aria-labelledby="t-projects">
+      <h2 id="t-projects">Proyectos</h2>
       <article class="project" id="aura">
         <figure class="frame">
           <div class="bar" aria-hidden="true"></div>
@@ -228,8 +228,8 @@
       </article>
     </section>
 
-    <section id="experiencia" aria-labelledby="t-exp">
-      <h2 id="t-exp">Experiencia</h2>
+    <section id="experience" aria-labelledby="t-experience">
+      <h2 id="t-experience">Experiencia</h2>
       <article class="job">
         <h3>Prácticas en Deloitte</h3>
         <p class="when"><time datetime="2026-10">Octubre 2026</time></p>
@@ -247,8 +247,8 @@
       </article>
     </section>
 
-    <section id="tecnologias" aria-labelledby="t-tec">
-      <h2 id="t-tec">Tecnologías</h2>
+    <section id="skills" aria-labelledby="t-skills">
+      <h2 id="t-skills">Tecnologías</h2>
       <dl class="stack">
         <div><dt>Front-end</dt><dd>HTML, CSS, JavaScript (SPA con JS vanilla), React, Tailwind, Bootstrap, jQuery, WordPress</dd></div>
         <div><dt>Back-end</dt><dd>Python, FastAPI, Django, Flask, SQL, MySQL, SQLite, Supabase</dd></div>
@@ -257,8 +257,8 @@
       </dl>
     </section>
 
-    <section id="formacion" aria-labelledby="t-form">
-      <h2 id="t-form">Formación</h2>
+    <section id="education" aria-labelledby="t-education">
+      <h2 id="t-education">Formación</h2>
       <article class="job">
         <h3>Bootcamp de Programación (250 h)</h3>
         <p class="when">Factoría F5, Cruz Roja. <time datetime="2026-08">Agosto</time> a <time datetime="2026-10">octubre 2026</time></p>
@@ -275,8 +275,8 @@
       <p class="langs">Idiomas: castellano y catalán nativo, inglés nivel alto.</p>
     </section>
 
-    <section id="contacto" aria-labelledby="t-con">
-      <h2 id="t-con">Contacto</h2>
+    <section id="contact" aria-labelledby="t-contact">
+      <h2 id="t-contact">Contacto</h2>
       <p>Estoy en Barcelona y busco mi próximo puesto como programador full stack junior.</p>
       <div class="actions">
         <a class="btn primary" href="mailto:Jonathanruizpalacios2@gmail.com">Escribirme un correo</a>
