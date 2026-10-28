@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Ruiz | Programador Full Stack Junior</title>
+  <meta name="description" content="Portfolio de Jonathan Ruiz, programador full stack junior en Barcelona: Python, FastAPI, JavaScript y React.">
+  <meta name="theme-color" content="#14284B">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jonathan Ruiz | Programador Full Stack Junior">
+  <meta property="og:description" content="Aplicaciones web con Python, FastAPI y JavaScript, de la base de datos a la pantalla.">
+  <meta property="og:locale" content="es_ES">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314284B'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='white'%3EJR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script>try{var t=localStorage.getItem("tema")}catch(e){}document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")</script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Jonathan Ruiz","jobTitle":"Programador Full Stack Junior","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"sameAs":["https://github.com/Cynox336","https://linkedin.com/in/jonathan-rp/"]}
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top">
+    <a class="brand" href="#inicio">Jonathan Ruiz</a>
+    <nav aria-label="Principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button">Modo oscuro</button>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="t-inicio">
+      <div>
+        <h1 id="t-inicio">Jonathan Ruiz</h1>
+        <p class="role">Programador full stack junior</p>
+        <p class="lead">Construyo aplicaciones web con Python, FastAPI y JavaScript, desde la base de datos hasta la pantalla. Desarrollo proyectos propios y para clientes desde 2023.</p>
+        <div class="actions">
+          <a class="btn primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn" href="src/cv/CV_Jonathan_Ruiz_Full_Stack_Junior.pdf" download>Descargar CV</a>
+        </div>
+      </div>
+      <div class="frame carousel" role="region" aria-roledescription="carousel" aria-label="Capturas de mis proyectos">
+        <div class="bar" aria-hidden="true"></div>
+        <div class="slides" id="slides">
+          <figure class="slide is-active" aria-roledescription="slide" aria-label="1 de 6">
+            <div class="shot"><img src="src/img/aura-inicio.webp" alt="Pantalla de inicio de Aura Neo-banking" width="1280" height="640" fetchpriority="high" decoding="async"></div>
+            <figcaption><a href="#aura">Aura Neo-banking</a></figcaption>
+          </figure>
+          <figure class="slide" aria-roledescription="slide" aria-label="2 de 6">
+            <div class="shot"><img src="src/img/knekro-bot.webp" alt="Captura de Knekro-BOT" width="1280" height="640" loading="lazy" decoding="async"></div>
+            <figcaption><a href="#knekro-bot">Knekro-BOT</a></figcaption>
+          </figure>
+          <figure class="slide" aria-roledescription="slide" aria-label="3 de 6">
+            <div class="shot"><img src="src/img/streamer-bot.png" alt="Captura de Streamer-BOT" width="1280" height="640" loading="lazy" decoding="async"></div>
+            <figcaption><a href="#streamer-bot">Streamer-BOT</a></figcaption>
+          </figure>
+          <figure class="slide" aria-roledescription="slide" aria-label="4 de 6">
+            <div class="shot"><img src="src/img/duckstore-inicio.webp" alt="Captura de Duckstore" width="1280" height="640" loading="lazy" decoding="async"></div>
+            <figcaption><a href="#duckstore">Duckstore</a></figcaption>
+          </figure>
+          <figure class="slide" aria-roledescription="slide" aria-label="5 de 6">
+            <div class="shot"><img src="src/img/wowelemental-inicio.webp" alt="Captura de WoWElemental" width="1280" height="640" loading="lazy" decoding="async"></div>
+            <figcaption><a href="#wowelemental">WoWElemental</a></figcaption>
+          </figure>
+          <figure class="slide" aria-roledescription="slide" aria-label="6 de 6">
+            <div class="shot"><img src="src/img/bis-tracker-inicio.webp" alt="Captura de Bis Tracker" width="1280" height="640" loading="lazy" decoding="async"></div>
+            <figcaption><a href="#bis-tracker">Bis Tracker</a></figcaption>
+          </figure>
+        </div>
+        <div class="controls">
+          <button type="button" class="prev">Anterior</button>
+          <div class="dots"></div>
+          <button type="button" class="pause" aria-pressed="false">Pausar</button>
+          <button type="button" class="next">Siguiente</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" aria-labelledby="t-proyectos">
+      <h2 id="t-proyectos">Proyectos</h2>
+      <article class="project" id="aura">
+        <figure class="frame">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="shot" data-hint="Añade src/img/aura-inicio.webp">
+            <img src="src/img/aura-inicio.webp" alt="Pantalla de inicio de Aura Neo-banking" width="1280" height="640" loading="lazy" decoding="async">
+          <button class="play" type="button" data-video="src/video/aura-demo.mp4" aria-label="Ver vídeo de demostración de Aura Neo-banking">Ver demo</button>
+          </div>
+                  <div class="thumbs" role="group" aria-label="Capturas de Aura Neo-banking">
+            <button class="thumb" type="button" aria-pressed="true" data-full="src/img/aura-inicio.webp" data-alt="Pantalla de inicio de Aura Neo-banking"><img src="src/img/aura-inicio-thumb.webp" alt="Inicio" width="320" height="160" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" aria-pressed="false" data-full="src/img/aura-transferir.webp" data-alt="Pantalla de transferencias de Aura Neo-banking"><img src="src/img/aura-transferir-thumb.webp" alt="Transferir" width="320" height="160" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" aria-pressed="false" data-full="src/img/aura-historial.webp" data-alt="Historial de movimientos de Aura Neo-banking"><img src="src/img/aura-historial-thumb.webp" alt="Historial" width="320" height="160" loading="lazy" decoding="async"></button>
+          </div>
+        </figure>
+        <div>
+          <h3>Aura Neo-banking</h3>
+          <p class="context">Prácticas en Deloitte, octubre 2026</p>
+          <p>App de banca simulada con login de 2 usuarios, transferencias funcionales, historial de transacciones y validación del IBAN (ficticio). El front es una SPA con JavaScript vanilla conectada a un backend en FastAPI y SQL.</p>
+          <p class="note"><strong>Usuarios de prueba para testear la app:</strong> <code>user1@banco.com</code> y <code>user2@banco.com</code>. Contraseña: <code>test1234</code></p>
+          <ul class="tags" aria-label="Tecnologías de Aura Neo-banking">
+          <li>JavaScript</li>
+          <li>FastAPI</li>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>Git</li>
+          <li>Metodología ágil</li>
+          </ul>
+        <p class="links"><a href="https://github.com/App-Bank" target="_blank" rel="noopener">Código en GitHub</a></p>
+        </div>
+      </article>
+      <article class="project" id="knekro-bot">
+        <figure class="frame">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="shot" data-hint="Añade src/img/knekro-bot.webp">
+            <img src="src/img/knekro-bot.webp" alt="Captura de Knekro-BOT" width="1280" height="640" loading="lazy" decoding="async">
+          </div>
+        </figure>
+        <div>
+          <h3>Knekro-BOT</h3>
+          <p class="context">Proyecto personal, octubre 2026</p>
+          <p>Bot de entretenimiento al estilo Gachapon, inspirado en el creador de contenido Knekro.</p>
+          <p class="note"><strong>Para testearlo:</strong> añade el bot a un servidor de Discord y sigue las instrucciones del README.</p>
+          <ul class="tags" aria-label="Tecnologías de Knekro-BOT">
+          <li>Python</li>
+          <li>Git</li>
+          </ul>
+        <p class="links"><a href="https://github.com/Cynox336/Knekro_BOT" target="_blank" rel="noopener">Código en GitHub</a></p>
+        </div>
+      </article>
+      <article class="project" id="streamer-bot">
+        <figure class="frame">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="shot" data-hint="Añade src/img/streamer-bot.png">
+            <img src="src/img/streamer-bot.png" alt="Captura de Streamer-BOT" width="1280" height="640" loading="lazy" decoding="async">
+          </div>
+        </figure>
+        <div>
+          <h3>Streamer-BOT</h3>
+          <p class="context">Proyecto personal, octubre 2026</p>
+          <p>Bot que avisa por Discord cuando varios creadores de contenido inician stream.</p>
+          <ul class="tags" aria-label="Tecnologías de Streamer-BOT">
+          <li>Python</li>
+          <li>Discord</li>
+          <li>Git</li>
+          </ul>
+        </div>
+      </article>
+      <article class="project" id="duckstore">
+        <figure class="frame">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="shot" data-hint="Añade src/img/duckstore-inicio.webp">
+            <img src="src/img/duckstore-inicio.webp" alt="Captura de Duckstore" width="1280" height="640" loading="lazy" decoding="async">
+          </div>
+        <div class="thumbs" role="group" aria-label="Capturas de Duckstore">
+            <button class="thumb" type="button" aria-pressed="true" data-full="src/img/duckstore-inicio.webp" data-alt="Página de inicio de Duckstore"><img src="src/img/duckstore-inicio-thumb.webp" alt="Inicio" width="320" height="160" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" aria-pressed="false" data-full="src/img/duckstore-catalogo.webp" data-alt="Catálogo de Duckstore"><img src="src/img/duckstore-catalogo-thumb.webp" alt="Catálogo" width="320" height="160" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" aria-pressed="false" data-full="src/img/duckstore-producto.webp" data-alt="Ficha de producto de Duckstore"><img src="src/img/duckstore-producto-thumb.webp" alt="Producto" width="320" height="160" loading="lazy" decoding="async"></button>
+          </div>
+        </figure>
+        <div>
+          <h3>Duckstore</h3>
+          <p class="context">Proyecto del bootcamp, agosto 2026</p>
+          <p>Catálogo ficticio de patos. Desarrollé la página de inicio y la maquetación responsive de todo el sitio, con metodología ágil y revisión de código.</p>
+          <ul class="tags" aria-label="Tecnologías de Duckstore">
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Git</li>
+          <li>Metodología ágil</li>
+          </ul>
+        <p class="links"><a href="https://github.com/DesarrolloWebFullStackIA/DuckStore" target="_blank" rel="noopener">Código en GitHub</a></p>
+        </div>
+      </article>
+      <article class="project" id="wowelemental">
+        <figure class="frame">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="shot" data-hint="Añade src/img/wowelemental-inicio.webp">
+            <img src="src/img/wowelemental-inicio.webp" alt="Captura de WoWElemental" width="1280" height="640" loading="lazy" decoding="async">
+          </div>
+        <div class="thumbs" role="group" aria-label="Capturas de WoWElemental">
+            <button class="thumb" type="button" aria-pressed="true" data-full="src/img/wowelemental-inicio.webp" data-alt="Portada de WoWElemental con las últimas noticias"><img src="src/img/wowelemental-inicio-thumb.webp" alt="Portada" width="320" height="160" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" aria-pressed="false" data-full="src/img/wowelemental-noticia.webp" data-alt="Noticia de WoWElemental con la Ficha de WoW, buscador y categorías"><img src="src/img/wowelemental-noticia-thumb.webp" alt="Noticia" width="320" height="160" loading="lazy" decoding="async"></button>
+          </div>
+        </figure>
+        <div>
+          <h3>WoWElemental</h3>
+          <p class="context">Proyecto para cliente, septiembre 2025 a febrero 2026</p>
+          <p>Web de noticias sobre Blizzard y sus juegos, con categorías por juego, publicación sencilla con imagen de portada, buscador y posts recientes. Sigue el valor de la Ficha de oro de WoW en América y Europa con la API de Blizzard. Más de 600 noticias publicadas.</p>
+          <ul class="tags" aria-label="Tecnologías de WoWElemental">
+          <li>WordPress</li>
+          <li>Hostinger</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>API de Blizzard</li>
+          </ul>
+        <p class="links"><a href="https://wowelemental.com/" target="_blank" rel="noopener">Visitar la web</a></p>
+        </div>
+      </article>
+      <article class="project" id="bis-tracker">
+        <figure class="frame">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="shot" data-hint="Añade src/img/bis-tracker-inicio.webp">
+            <img src="src/img/bis-tracker-inicio.webp" alt="Captura de Bis Tracker" width="1280" height="640" loading="lazy" decoding="async">
+          </div>
+          <div class="thumbs" role="group" aria-label="Capturas de Bis Tracker">
+            <button class="thumb" type="button" aria-pressed="true" data-full="src/img/bis-tracker-inicio.webp" data-alt="Página de inicio de Bis Tracker con el buscador de personajes"><img src="src/img/bis-tracker-inicio-thumb.webp" alt="Inicio" width="320" height="160" loading="lazy" decoding="async"></button>
+            <button class="thumb" type="button" aria-pressed="false" data-full="src/img/bis-tracker-personaje.webp" data-alt="Ficha de un personaje en Bis Tracker con su equipo y el botón Ver BIS"><img src="src/img/bis-tracker-personaje-thumb.webp" alt="Personaje" width="320" height="160" loading="lazy" decoding="async"></button>
+          </div>
+        </figure>
+        <div>
+          <h3>Bis Tracker</h3>
+          <p class="context">Proyecto personal, mayo a julio 2025</p>
+          <p>Busca los personajes de los jugadores con la API de Blizzard y les recomienda los mejores objetos de la temporada. Los datos de temporada ya no se actualizan.</p>
+          <ul class="tags" aria-label="Tecnologías de Bis Tracker">
+          <li>React</li>
+          <li>Tailwind</li>
+          <li>API de Blizzard</li>
+          <li>Git</li>
+          </ul>
+        <p class="links"><a href="https://bis-tracker-neon.vercel.app" target="_blank" rel="noopener">Visitar la web</a> <a href="https://github.com/Cynox336/Bis-tracker" target="_blank" rel="noopener">Código en GitHub</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="experiencia" aria-labelledby="t-exp">
+      <h2 id="t-exp">Experiencia</h2>
+      <article class="job">
+        <h3>Prácticas en Deloitte</h3>
+        <p class="when"><time datetime="2026-10">Octubre 2026</time></p>
+        <p>Desarrollo de Aura Neo-banking: front-end como SPA con JavaScript vanilla conectado a un backend en FastAPI y SQL. Trabajo con Git, metodología ágil y revisión de código.</p>
+      </article>
+      <article class="job">
+        <h3>Desarrollador web freelance, WoWElemental</h3>
+        <p class="when"><time datetime="2025-09">Septiembre 2025</time> a <time datetime="2026-02">febrero 2026</time></p>
+        <p>Web de noticias para un cliente con WordPress y Hostinger, cumpliendo todos sus requisitos e integrando la API de Blizzard. Sigue en funcionamiento, con más de 600 noticias publicadas.</p>
+      </article>
+      <article class="job">
+        <h3>Teleoperador en Intelcia</h3>
+        <p class="when"><time datetime="2022-04">Abril</time> a <time datetime="2022-07">julio 2022</time></p>
+        <p>Atención al cliente y gestión de incidencias con CRM.</p>
+      </article>
+    </section>
+
+    <section id="tecnologias" aria-labelledby="t-tec">
+      <h2 id="t-tec">Tecnologías</h2>
+      <dl class="stack">
+        <div><dt>Front-end</dt><dd>HTML, CSS, JavaScript (SPA con JS vanilla), React, Tailwind, Bootstrap, jQuery, WordPress</dd></div>
+        <div><dt>Back-end</dt><dd>Python, FastAPI, Django, Flask, SQL, MySQL, SQLite, Supabase</dd></div>
+        <div><dt>Metodologías y herramientas</dt><dd>Git, GitHub, metodología ágil, revisión de código, NPM</dd></div>
+        <div><dt>Diseño</dt><dd>Photoshop, Adobe InDesign, Adobe Premiere</dd></div>
+      </dl>
+    </section>
+
+    <section id="formacion" aria-labelledby="t-form">
+      <h2 id="t-form">Formación</h2>
+      <article class="job">
+        <h3>Bootcamp de Programación (250 h)</h3>
+        <p class="when">Factoría F5, Cruz Roja. <time datetime="2026-08">Agosto</time> a <time datetime="2026-10">octubre 2026</time></p>
+        <p>Proyectos del curso desarrollados con metodología ágil.</p>
+      </article>
+      <article class="job">
+        <h3>Bootcamp de Programación web Python y IA (365 h)</h3>
+        <p class="when">Fundació esplai, Enfocat. <time datetime="2024-09">Septiembre</time> a <time datetime="2024-12">diciembre 2024</time></p>
+      </article>
+      <article class="job">
+        <h3>Bootcamp de Programación web Front-End (450 h)</h3>
+        <p class="when">PIMEC, Projecte Singulars. <time datetime="2023-02">Febrero</time> a <time datetime="2023-06">junio 2023</time></p>
+      </article>
+      <p class="langs">Idiomas: castellano y catalán nativo, inglés nivel alto.</p>
+    </section>
+
+    <section id="contacto" aria-labelledby="t-con">
+      <h2 id="t-con">Contacto</h2>
+      <p>Estoy en Barcelona y busco mi próximo puesto como programador full stack junior.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:Jonathanruizpalacios2@gmail.com">Escribirme un correo</a>
+        <a class="btn" href="https://linkedin.com/in/jonathan-rp/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Jonathan Ruiz, Barcelona</p></footer>
+
+  <dialog id="demo" aria-label="Vídeo de demostración">
+    <button class="close" type="button">Cerrar</button>
+    <video id="demo-video" controls playsinline preload="none"></video>
+    <p id="demo-error" role="alert" hidden>No se encuentra el vídeo. Guárdalo en la carpeta src/video con el nombre indicado en el botón del proyecto.</p>
+  </dialog>
+</body>
+</html>
